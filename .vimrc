@@ -77,12 +77,12 @@ map <silent> ,P :sview ~/reg.txt<CR>"zdddG:q!<CR>:call setreg('"', @", @z)<CR>P
 if &compatible
   set nocompatible
 endif
-set runtimepath+=/usr/local/bin/repos/github.com/Shougo/dein.vim
+set runtimepath+=/home/weijian.cao/.cache/dein/repos/github.com/Shougo/dein.vim
 
-if dein#load_state('/usr/local/bin/repos/github.com/Shougo/dein.vim/rplugin')
-  call dein#begin('/usr/local/bin/repos/github.com/Shougo/dein.vim/rplugin')
+if dein#load_state('/home/weijian.cao/.cache/dein')
+  call dein#begin('/home/weijian.cao/.cache/dein')
 
-  call dein#add('/usr/local/bin/repos/github.com/Shougo/dein.vim')
+  call dein#add('/home/weijian.cao/.cache/dein/repos/github.com/Shougo/dein.vim')
   call dein#add('mhinz/vim-startify')
   call dein#add('easymotion/vim-easymotion')
   call dein#add('Shougo/neocomplete.vim')
